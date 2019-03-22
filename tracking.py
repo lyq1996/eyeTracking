@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 import math
 import frst
+import frst1
 
 # golbal variable
 gray_threshold = 40
@@ -37,7 +38,6 @@ def main():
 
     while True:
         ret, pic = vs.read()
-        # pic_gray = cv2.cvtColor(pic, cv2.COLOR_BGR2GRAY)
         pic_gray = cv2.split(pic)[2]
 
         face_boxs = face_detector.detectMultiScale(pic_gray, scaleFactor=1.1,
@@ -51,7 +51,10 @@ def main():
                 e_right_gray = cv2.split(e_right)[2]
                 e_left_gray = cv2.split(e_left)[2]
 
-                eye_radius = int(0.13 * (e_right.shape)[1])
+                e_right_gray = cv2.GaussianBlur(e_right_gray, (15, 15), 1)
+                e_left_gray = cv2.GaussianBlur(e_left_gray, (15, 15), 1)
+
+                eye_radius = int(0.1 * (e_right.shape)[1])
                 eye_radius = eye_radius if eye_radius % 2 == 1 else eye_radius + 1
                 for i in range(e_left_gray.shape[0]):
                     for j in range(e_left_gray.shape[1]):
@@ -66,9 +69,9 @@ def main():
                         else:
                             e_right_gray[i][j] = 0
 
-                loc, mags = frst.frst(e_left_gray, eye_radius, 0.3)
+                loc, mags = frst1.frst(e_left_gray, eye_radius, 0.3)
                 cv2.circle(e_left, loc, 1, (0, 255, 0))
-                loc1, mags = frst.frst(e_right_gray, eye_radius, 0.3)
+                loc1, mags = frst1.frst(e_right_gray, eye_radius, 0.3)
                 cv2.circle(e_right, loc1, 1, (0, 255, 0))
                 cv2.imshow('left eye', e_left)
                 cv2.imshow('left1 eye', e_left_gray)
