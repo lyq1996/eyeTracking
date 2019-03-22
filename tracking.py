@@ -58,13 +58,13 @@ def main():
                 eye_radius = eye_radius if eye_radius % 2 == 1 else eye_radius + 1
                 for i in range(e_left_gray.shape[0]):
                     for j in range(e_left_gray.shape[1]):
-                        if e_left_gray[i][j] < 40:
+                        if e_left_gray[i][j] < gray_threshold:
                             e_left_gray[i][j] = 255 - e_left_gray[i][j]
                         else:
                             e_left_gray[i][j] = 0
                 for i in range(e_right_gray.shape[0]):
                     for j in range(e_right_gray.shape[1]):
-                        if e_right_gray[i][j] < 40:
+                        if e_right_gray[i][j] < gray_threshold:
                             e_right_gray[i][j] = 255 - e_right_gray[i][j]
                         else:
                             e_right_gray[i][j] = 0
