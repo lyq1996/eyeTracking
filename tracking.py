@@ -69,9 +69,9 @@ def main():
                         else:
                             e_right_gray[i][j] = 0
 
-                loc, mags = frst1.frst(e_left_gray, eye_radius, 0.3)
+                loc, mags = frst.frst(e_left_gray, eye_radius, 0.8)
                 cv2.circle(e_left, loc, 1, (0, 255, 0))
-                loc1, mags = frst1.frst(e_right_gray, eye_radius, 0.3)
+                loc1, mags = frst.frst(e_right_gray, eye_radius, 0.8)
                 cv2.circle(e_right, loc1, 1, (0, 255, 0))
                 cv2.imshow('left eye', e_left)
                 cv2.imshow('left1 eye', e_left_gray)
