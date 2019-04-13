@@ -34,6 +34,6 @@ If it is unstable, you can tune the parameters:
 
 ## Other
 ## 其他
-The file Frst1.py has not been completed yet. It is expected to be superimposed with multiple radii to make the positioning more precise. It was stable at first, and then I change something that i didn't remembered then it was broken. I have no time to finish it recently.  
+The file frst1.py has not been completed yet. It is expected to be superimposed with multiple radii to make the positioning more precise. It was stable at first, and then I change something that i didn't remembered then it was broken. I have no time to finish it recently.  
 
 frst1.py暂未完成,预想用多个半径叠加，使定位更加精确，不知道怎么回事，一开始是挺稳定，后来调坏了，目前没时间搞。
