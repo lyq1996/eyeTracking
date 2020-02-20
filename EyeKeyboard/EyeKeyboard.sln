@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyeKeyboard", "EyeKeyboard\EyeKeyboard.csproj", "{38324FE0-49B8-4009-AC58-46C9BDBEDC2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebugServer", "DebugServer\DebugServer.csproj", "{63955804-1C7A-46AB-8A69-64BEB4F24AEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38324FE0-49B8-4009-AC58-46C9BDBEDC2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38324FE0-49B8-4009-AC58-46C9BDBEDC2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38324FE0-49B8-4009-AC58-46C9BDBEDC2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38324FE0-49B8-4009-AC58-46C9BDBEDC2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63955804-1C7A-46AB-8A69-64BEB4F24AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63955804-1C7A-46AB-8A69-64BEB4F24AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63955804-1C7A-46AB-8A69-64BEB4F24AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63955804-1C7A-46AB-8A69-64BEB4F24AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F984FA05-9FF2-409F-AB57-84A90F670438}
+	EndGlobalSection
+EndGlobal

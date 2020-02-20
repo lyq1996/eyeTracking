@@ -1,0 +1,147 @@
+﻿<controls:MetroWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EyeKeyboard"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="EyeKeyboard.MainWindow"
+        mc:Ignorable="d"
+        Title="EyeKeyboard" Height="921" Width="643" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Loaded="MetroWindow_Loaded" IsTabStop="False" Closed="MetroWindow_Closed">
+
+    <Grid>
+        <!--<materialDesign:DialogHost CloseOnClickAway="True">
+
+
+            <materialDesign:DialogHost.DialogContentTemplate>
+                <DataTemplate DataType="local:SettingsDialog">
+
+                </DataTemplate>
+            </materialDesign:DialogHost.DialogContentTemplate>
+           
+
+
+        </materialDesign:DialogHost>-->
+        <ListBox x:Name="lb_log" Style="{StaticResource MaterialDesignCardsListBox}" HorizontalAlignment="Left" Height="200" Margin="24,593,0,0" VerticalAlignment="Top" Width="294" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+        <Label Content="IP:" HorizontalAlignment="Left" Margin="24,541,0,0" VerticalAlignment="Top" Width="36" Foreground="White" Height="23"/>
+        <Label Content="Port:" HorizontalAlignment="Left" Margin="182,542,0,0" VerticalAlignment="Top" Width="42" Foreground="White" Height="23"/>
+        <TextBox x:Name="tb_ip" HorizontalAlignment="Left" Height="23" Margin="66,541,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="98" IsTabStop="False"/>
+        <TextBox x:Name="tb_output" HorizontalAlignment="Left" Height="117" Margin="22,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="595" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" FontSize="18" FontWeight="Bold" IsReadOnly="True" IsTabStop="False"/>
+        <Button x:Name="btn_1" Content="1" HorizontalAlignment="Left" Height="55" Margin="23,225,0,0" VerticalAlignment="Top" Width="54" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_2" Content="2" HorizontalAlignment="Left" Height="55" Margin="82,225,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_3" Content="3" HorizontalAlignment="Left" Height="55" Margin="142,225,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_4" Content="4" HorizontalAlignment="Left" Height="55" Margin="203,225,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_5" Content="5" HorizontalAlignment="Left" Height="55" Margin="263,225,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_6" Content="6" HorizontalAlignment="Left" Height="55" Margin="323,225,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_7" Content="7" HorizontalAlignment="Left" Height="55" Margin="383,225,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_8" Content="8" HorizontalAlignment="Left" Height="55" Margin="443,225,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_9" Content="9" HorizontalAlignment="Left" Height="55" Margin="503,225,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_0" Content="0" HorizontalAlignment="Left" Height="55" Margin="563,225,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_Q" Content="Q" HorizontalAlignment="Left" Height="55" Margin="22,285,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_W" Content="W" HorizontalAlignment="Left" Height="55" Margin="82,285,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_E" Content="E" HorizontalAlignment="Left" Height="55" Margin="142,285,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_R" Content="R" HorizontalAlignment="Left" Height="55" Margin="203,285,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_T" Content="T" HorizontalAlignment="Left" Height="55" Margin="263,285,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_Y" Content="Y" HorizontalAlignment="Left" Height="55" Margin="323,285,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_U" Content="U" HorizontalAlignment="Left" Height="55" Margin="383,285,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_I" Content="I" HorizontalAlignment="Left" Height="55" Margin="443,285,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_O" Content="O" HorizontalAlignment="Left" Height="55" Margin="503,285,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_P" Content="P" HorizontalAlignment="Left" Height="55" Margin="563,285,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_A" Content="A" HorizontalAlignment="Left" Height="55" Margin="22,345,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_S" Content="S" HorizontalAlignment="Left" Height="55" Margin="82,345,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_D" Content="D" HorizontalAlignment="Left" Height="55" Margin="142,345,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_F" Content="F" HorizontalAlignment="Left" Height="55" Margin="203,345,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_G" Content="G" HorizontalAlignment="Left" Height="55" Margin="263,345,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_H" Content="H" HorizontalAlignment="Left" Height="55" Margin="323,345,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_J" Content="J" HorizontalAlignment="Left" Height="55" Margin="383,345,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_K" Content="K" HorizontalAlignment="Left" Height="55" Margin="443,345,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_L" Content="L" HorizontalAlignment="Left" Height="55" Margin="503,345,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_sqm" Content="'" HorizontalAlignment="Left" Height="55" Margin="563,345,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_Z" Content="Z" HorizontalAlignment="Left" Height="55" Margin="22,405,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_X" Content="X" HorizontalAlignment="Left" Height="55" Margin="82,405,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_C" Content="C" HorizontalAlignment="Left" Height="55" Margin="142,405,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_V" Content="V" HorizontalAlignment="Left" Height="55" Margin="203,405,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_B" Content="B" HorizontalAlignment="Left" Height="55" Margin="263,405,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_N" Content="N" HorizontalAlignment="Left" Height="55" Margin="323,405,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_M" Content="M" HorizontalAlignment="Left" Height="55" Margin="383,405,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_cm" Content="," HorizontalAlignment="Left" Height="55" Margin="443,405,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_fs" Content="." HorizontalAlignment="Left" Height="55" Margin="503,405,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_qm" Content="?" HorizontalAlignment="Left" Height="55" Margin="563,405,0,0" VerticalAlignment="Top" Width="55" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Button x:Name="btn_Space" Content="Space" HorizontalAlignment="Left" Height="55" Margin="23,465,0,0" VerticalAlignment="Top" Width="475" FontSize="18" FontWeight="Bold" Click="BtnKey_Click" Background="#FF009688"/>
+        <Button x:Name="btn_Del" Content="Del" HorizontalAlignment="Left" Height="55" Margin="503,465,0,0" VerticalAlignment="Top" Width="115" FontSize="18" FontWeight="Bold" Click="BtnKey_Click"/>
+        <Image x:Name="img_video" HorizontalAlignment="Left" Height="25" Margin="305,542,0,0" VerticalAlignment="Top" Width="50"/>
+        <Image x:Name="img_up" HorizontalAlignment="Left" Height="60" Margin="294,581,0,0" VerticalAlignment="Top" Width="60" Source="pack://siteoforigin:,,,/Resources/off.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img_left" HorizontalAlignment="Left" Height="60" Margin="214,657,0,0" VerticalAlignment="Top" Width="60" Source="pack://siteoforigin:,,,/Resources/off.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img_down" HorizontalAlignment="Left" Height="60" Margin="295,733,0,0" VerticalAlignment="Top" Width="60" Source="pack://siteoforigin:,,,/Resources/off.png"/>
+        <Image x:Name="img_right" HorizontalAlignment="Left" Height="60" Margin="377,659,0,0" VerticalAlignment="Top" Width="60" Source="pack://siteoforigin:,,,/Resources/off.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="img_center" HorizontalAlignment="Left" Height="60" Margin="295,657,0,0" VerticalAlignment="Top" Width="60" Source="pack://siteoforigin:,,,/Resources/round_off.png"/>
+        <materialDesign:ColorZone Mode="PrimaryDark" Padding="16"
+            VerticalAlignment="Stretch"
+    Margin="0,0,0,802">
+            <DockPanel>
+                <Grid 
+                    materialDesign:RippleAssist.IsCentered="True">
+                    <Label Content="Welcome to EyeKeyboard V2.0"
+                        VerticalContentAlignment="Center"
+                        FontSize="{DynamicResource {x:Static SystemParameters.CaptionHeightKey}}" Margin="47,-8,92,-8" />
+                </Grid>
+            </DockPanel>
+        </materialDesign:ColorZone>
+
+        <!--<materialDesign:DialogHost>
+            <Button x:Name="btn_settings" Grid.Row="0"
+            Style="{StaticResource MaterialDesignFloatingActionButton}"
+            Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="0,0,587,811" BorderBrush="White" Background="{x:Null}" Height="31" Width="32">
+            <materialDesign:PackIcon Kind="Settings" />
+
+            </Button>
+        </materialDesign:DialogHost>-->
+
+        <Button x:Name="btn_help" Grid.Row="0"
+            Style="{StaticResource MaterialDesignFloatingActionButton}"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="0,0,581,832" BorderBrush="White" Background="{x:Null}" Height="30" Width="33" Click="Btn_help_Click" IsTabStop="False">
+            <materialDesign:PackIcon Kind="HelpCircle" />
+        </Button>
+        <TextBox x:Name="tb_port" HorizontalAlignment="Left" Height="23" Margin="229,542,0,0" TextWrapping="Wrap" Text="8080" VerticalAlignment="Top" Width="48" IsTabStop="False" RenderTransformOrigin="-1.235,0.609"/>
+        <Button x:Name="btn_open" Content="Open" HorizontalAlignment="Left" Height="50" Margin="23,820,0,0" VerticalAlignment="Top" Width="115" FontSize="18" FontWeight="Bold" Click="Btn_open_Click" IsTabStop="False"/>
+        <Button x:Name="btn_close" Content="Close" HorizontalAlignment="Left" Height="50" Margin="503,820,0,0" VerticalAlignment="Top" Width="115" FontSize="18" FontWeight="Bold" Click="Btn_close_Click" IsTabStop="False" IsEnabled="False"/>
+        <Image x:Name="img_lamp" HorizontalAlignment="Left" Height="40" Margin="577,26,0,0" VerticalAlignment="Top" Width="40" Source="pack://siteoforigin:,,,/Resources/init_off.png"/>
+        <Button x:Name="btn_link" Style="{StaticResource MaterialDesignFlatButton}" Content="www.sanshuifeibing.cn" HorizontalAlignment="Left" Height="50" Margin="211,822,0,0" VerticalAlignment="Top" Width="212" FontSize="14" FontWeight="Bold" Click="Btn_link_Click" IsTabStop="False" Background="{x:Null}" Foreground="{DynamicResource AccentBaseColorBrush}"/>
+
+
+
+
+    </Grid>
+</controls:MetroWindow>
